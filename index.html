@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elise Pourtois • Portfolio</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +30,8 @@
             <!-- Hamburger Btn -->
             <div class="flex justify-end px-1">
                 <button class="icone-toggle md:hidden">
-                    <img src="assets/menu.svg" alt="icône hamburger" class="h-6 w-6">
+                    <!-- <img src="assets/menu.svg" alt="icône hamburger" class="h-6 w-6"> -->
+                    <i class="fa-solid fa-bars text-4xl"></i>
                 </button>
             </div>
 
@@ -41,7 +44,7 @@
                     <a href="#work">Mon travail</a>
                 </li>
                 <li class="py-2 font-semibold text-center border-t border-outerspace md:border-none">
-                    <a href="#contact">Contact</a>
+                    <a href="mailto:elise.prts@gmail.com">Contact</a>
                 </li>
             </ul>
 
@@ -61,7 +64,7 @@
 
             <div class="relative flex items-center justify-center order-1 lg:order-2">
                 <img src="/assets/photo_cv.JPG" alt="Elise Pourtois" class="rounded-full w-80 z-0 lg:min-w-[450px]">
-                <!-- <img src="/assets/blob_outline.svg" alt="icône check" class="h-5" class="absolute z-10 w-80"> -->
+                <!-- <img src="/assets/blob_outline.svg" alt="icône check" class="h-5" class="absolute z-10"> -->
             </div>
 
         </div>
@@ -71,11 +74,13 @@
     <!-- About -->
     <section id="about" class="bg-outerspace px-10 py-20">
 
+        <!-- Text -->
         <div class="mb-14 text-zinc-50 text-center md:w-[70%] md:mx-auto">
-            <h3 class="mb-10 font-oswald uppercase text-3xl font-bold">À propos</h3>
+            <h3 class="mb-10 font-oswald uppercase text-3xl font-bold xl:text-4xl">À propos</h3>
             <p class="font-extralight text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam sapiente magnam id voluptas nisi sed nihil quis, repudiandae eum dicta sequi itaque quo exercitationem eveniet?</p>
         </div>
 
+        <!-- Skills -->
         <div class="flex flex-col items-center gap-6 md:flex-row md:justify-center">
             <!-- Card 1 -->
             <div class="min-h-[240px] w-72 p-5 bg-zinc-50/95 rounded-md shadow-md">
@@ -118,7 +123,126 @@
 
     </section>
 
-    <!--  -->
+    <!-- Work -->
+    <section id="work" class="bg-arsenic px-10 py-20">
+
+        <h3 class="mb-14 text-zinc-50 font-oswald uppercase text-3xl font-bold xl:text-4xl">Mes projets</h3>
+
+        <!-- Grid -->
+        <div class="grid gap-6 grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+            <!-- Card -->
+            <div class="shadow-md">
+                <!-- Image -->
+                <img src="https://picsum.photos/300/150?random=1" alt="" class="h-80 object-cover rounded-t-md">
+                <!-- Content -->
+                <div class="p-5 bg-zinc-50 rounded-b-md">
+                    <div class="pb-5 text-outerspace">
+                        <p class="font-oswald uppercase font-bold text-xl mb-3">Titre</p>
+                        <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos expedita tenetur, ab veniam ipsum illo consequatur reprehenderit ducimus voluptatum voluptates.</p>
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="h-10 w-10 bg-orange rounded-full">
+                            <i class="fa-solid fa-arrow-right text-zinc-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="shadow-md">
+                <!-- Image -->
+                <img src="https://picsum.photos/300/150?random=2" alt="" class="h-80 object-cover rounded-t-md">
+                <!-- Content -->
+                <div class="p-5 bg-zinc-50 rounded-b-md">
+                    <div class="pb-5 text-outerspace">
+                        <p class="font-oswald uppercase font-bold text-xl mb-3">Titre</p>
+                        <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos expedita tenetur, ab veniam ipsum illo consequatur reprehenderit ducimus voluptatum voluptates.</p>
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="h-10 w-10 bg-orange rounded-full">
+                            <i class="fa-solid fa-arrow-right text-zinc-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="shadow-md">
+                <!-- Image -->
+                <img src="https://picsum.photos/300/150?random=3" alt="" class="h-80 object-cover rounded-t-md">
+                <!-- Content -->
+                <div class="p-5 bg-zinc-50 rounded-b-md">
+                    <div class="pb-5 text-outerspace">
+                        <p class="font-oswald uppercase font-bold text-xl mb-3">Titre</p>
+                        <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos expedita tenetur, ab veniam ipsum illo consequatur reprehenderit ducimus voluptatum voluptates.</p>
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="h-10 w-10 bg-orange rounded-full">
+                            <i class="fa-solid fa-arrow-right text-zinc-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="shadow-md">
+                <!-- Image -->
+                <img src="https://picsum.photos/300/150?random=4" alt="" class="h-80 object-cover rounded-t-md">
+                <!-- Content -->
+                <div class="p-5 bg-zinc-50 rounded-b-md">
+                    <div class="pb-5 text-outerspace">
+                        <p class="font-oswald uppercase font-bold text-xl mb-3">Titre</p>
+                        <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos expedita tenetur, ab veniam ipsum illo consequatur reprehenderit ducimus voluptatum voluptates.</p>
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="h-10 w-10 bg-orange rounded-full">
+                            <i class="fa-solid fa-arrow-right text-zinc-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="shadow-md">
+                <!-- Image -->
+                <img src="https://picsum.photos/300/150?random=5" alt="" class="h-80 object-cover rounded-t-md">
+                <!-- Content -->
+                <div class="p-5 bg-zinc-50 rounded-b-md">
+                    <div class="pb-5 text-outerspace">
+                        <p class="font-oswald uppercase font-bold text-xl mb-3">Titre</p>
+                        <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos expedita tenetur, ab veniam ipsum illo consequatur reprehenderit ducimus voluptatum voluptates.</p>
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="h-10 w-10 bg-orange rounded-full">
+                            <i class="fa-solid fa-arrow-right text-zinc-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="shadow-md">
+                <!-- Image -->
+                <img src="https://picsum.photos/300/150?random=6" alt="" class="h-80 object-cover rounded-t-md">
+                <!-- Content -->
+                <div class="p-5 bg-zinc-50 rounded-b-md">
+                    <div class="pb-5 text-outerspace">
+                        <p class="font-oswald uppercase font-bold text-xl mb-3">Titre</p>
+                        <p class="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos expedita tenetur, ab veniam ipsum illo consequatur reprehenderit ducimus voluptatum voluptates.</p>
+                    </div>
+                    <div class="text-end">
+                        <button href="#" class="h-10 w-10 bg-orange rounded-full">
+                            <i class="fa-solid fa-arrow-right text-zinc-50"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
 
     <script src="/app.js"></script>
     
