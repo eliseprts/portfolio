@@ -1,3 +1,18 @@
+// MODAL
+const modalContainer = document.querySelector(".modal-container")
+const modalTriggers = document.querySelectorAll(".modal-trigger")
+
+// Display modal when page loaded
+window.addEventListener("load", displayModal)
+function displayModal() {
+    modalContainer.classList.remove("hidden")
+}
+// Remove modal with close btn and when click on overlay
+modalTriggers.forEach(trigger => trigger.addEventListener("click", hiddenModal))
+function hiddenModal() {
+    modalContainer.classList.add("hidden")
+}
+
 // BURGER MENU
 const menuElementsToToggle = document.querySelectorAll('.toggle-menu')
 const iconToggle = document.querySelector('.icone-toggle')
