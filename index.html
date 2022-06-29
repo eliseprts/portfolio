@@ -14,18 +14,39 @@
     <!-- Style -->
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="font-montserrat">
+<body class="font-montserrat bg-yankeesblue">
 
-    <!-- Navbar + Intro -->
-    <section class="bg-gradient-to-bl from-pink to-orange"> 
+    <!-- MODAL -->
+    <div class="hidden modal-container fixed top-0 w-[100vw] h-[100vh] z-50 text-yankeesblue">
+
+        <div class="modal-trigger absolute w-[100%] h-[100%] bg-slate-300/50 cursor-pointer"></div>
+
+        <div class="w-[95%] max-w-[500px] min-w-[300px] p-8 bg-zinc-50 rounded-md shadow-md absolute top-[40%] left-[50%] -translate-x-[50%]">
+            <button href="#" class="modal-trigger h-10 w-10 bg-gradient-to-l from-pink to-orange rounded-full absolute top-2.5 right-2.5">
+                <i class="fa-solid fa-xmark text-2xl text-zinc-50"></i>
+            </button>
+            <p class="mt-8 font-oswald font-bold uppercase">
+                <span class="block text-7xl">Work</span>
+                <span class="block text-5xl">in progress...</span>
+            </p>
+            <p class="mt-4 font-light">N'hésitez pas à revenir régulièrement pour voir l'évolution 😉</p>
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+    <header class="relative pb-8 pt-20 md:pb-16 md:pt-16">
+
+        <!-- Background -->
+        <div class="-skew-y-[4deg] -translate-y-28 absolute bg-gradient-to-bl from-pink left-0 to-orange top-0 w-[100%] h-[120%] -z-2 transform"></div>
 
         <!-- Navbar -->
         <nav class="
-            fixed top-0 z-20 py-4 px-10 w-full 
-            bg-gunmetal shadow-md 
-            grid grid-cols-none 
-            text-zinc-50 uppercase font-medium
-            md:bg-transparent md:shadow-none md:text-yankeesblue md:static">
+        fixed top-0 z-20 py-4 px-10 w-full 
+        bg-gunmetal shadow-md 
+        grid grid-cols-none 
+        text-zinc-50 uppercase font-medium
+        md:bg-transparent md:shadow-none md:text-yankeesblue md:absolute">
 
             <!-- Hamburger Btn -->
             <div class="flex justify-end px-1">
@@ -49,9 +70,9 @@
             </ul>
 
         </nav>
-
+    
         <!-- Intro -->
-        <div class="w-full px-4 py-40 flex flex-col items-center gap-16 lg:flex-row lg:justify-center lg:gap-32 lg:px-10 lg:w-[70%] lg:mx-auto">
+        <div class="relative z-index-20 w-full px-4 py-20 flex flex-col items-center gap-16 lg:flex-row lg:justify-center lg:gap-36 lg:w-[60%] lg:mx-auto lg:py-0 lg:pt-20 lg:pb-10">
             
             <div class="uppercase text-yankeesblue text-center order-2 lg:order-1 lg:text-start">
                 <h1 class="mb-5 font-oswald font-bold text-7xl lg:text-8xl">
@@ -63,16 +84,16 @@
             </div>
 
             <div class="relative flex items-center justify-center order-1 lg:order-2">
-                <img src="/assets/photo_cv.JPG" alt="Elise Pourtois" class="rounded-full w-80 z-0 lg:min-w-[450px]">
+                <img src="/assets/photo_cv.JPG" alt="Elise Pourtois" class="rounded-full w-80 z-0 lg:min-w-[400px]">
                 <!-- <img src="/assets/blob_outline.svg" alt="icône check" class="h-5" class="absolute z-10"> -->
             </div>
 
         </div>
 
-    </section>
+    </header>
 
-    <!-- About -->
-    <section id="about" class="bg-yankeesblue px-10 py-20">
+    <!-- ABOUT -->
+    <section id="about" class="pt-36 pb-20 px-10">
 
         <!-- Text -->
         <div class="mb-14 text-zinc-50 text-center md:w-[70%] md:mx-auto">
@@ -127,7 +148,7 @@
 
     </section>
 
-    <!-- Work -->
+    <!-- WORK -->
     <section id="work" class="bg-gunmetal px-10 py-20">
 
         <h3 class="mb-14 text-zinc-50 font-oswald uppercase text-3xl font-bold xl:text-4xl">Mes projets</h3>
@@ -248,7 +269,7 @@
 
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="flex justify-between items-start px-10 py-10 bg-yankeesblue">
 
         <div class="text-zinc-50">
