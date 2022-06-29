@@ -15,11 +15,23 @@ function hiddenModal() {
 
 // BURGER MENU
 const menuElementsToToggle = document.querySelectorAll('.toggle-menu')
-const iconToggle = document.querySelector('.icone-toggle')
+const iconToggle = document.querySelector('.icon-toggle')
+const iconMenu = document.querySelector(".icon-menu")
 
-const toggleMenu = () => menuElementsToToggle.forEach(el => el.classList.toggle('hidden'))
+let menuOpen = false
 
-iconToggle.addEventListener('click', toggleMenu)
+iconToggle.addEventListener("click", toggleMenu)
+function toggleMenu() {
+    if (!menuOpen) {
+        menuElementsToToggle.forEach(el => el.classList.remove("hidden"))
+        iconMenu.classList.replace("fa-bars", "fa-xmark")
+        menuOpen = true
+    } else {
+        menuElementsToToggle.forEach(el => el.classList.add("hidden"))
+        iconMenu.classList.replace("fa-xmark", "fa-bars")
+        menuOpen = false
+    }
+}
 
 // SMOOTH SCROLL
 const menuLinks = [...document.querySelectorAll('.smooth-scrool-link')]
