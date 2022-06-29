@@ -22,7 +22,8 @@ const toggleMenu = () => menuElementsToToggle.forEach(el => el.classList.toggle(
 iconToggle.addEventListener('click', toggleMenu)
 
 // SMOOTH SCROLL
-const menuLinks = [...document.querySelectorAll('.link-menu')]
+const menuLinks = [...document.querySelectorAll('.smooth-scrool-link')]
+console.log(menuLinks)
 const sections = [...document.querySelectorAll('section')]
 
 // Calculation of the position top of each section
@@ -44,4 +45,4 @@ function addScrollSmooth(e) {
 }
 
 // If window is resizing, recall the function positionCalculation
-window.addEventListener("resize", positionCalculation)
+window.addEventListener('resize', positionCalculation)
