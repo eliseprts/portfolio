@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 <body class="font-montserrat bg-yankeesblue">
 
     <!-- MODAL -->
-    <div class="hidden modal-container fixed top-0 w-[100vw] h-[100vh] z-50 text-yankeesblue">
+    <!-- <div class="hidden modal-container fixed top-0 w-[100vw] h-[100vh] z-50 text-yankeesblue">
 
         <div class="modal-trigger absolute w-[100%] h-[100%] bg-slate-300/50 cursor-pointer"></div>
 
@@ -29,13 +29,19 @@
                 <span class="block text-7xl">Work</span>
                 <span class="block text-5xl">in progress...</span>
             </p>
-            <p class="mt-4 font-light">N'hésitez pas à revenir régulièrement pour voir l'évolution 😉</p>
+            <p class="mt-4 font-light">N'hésite pas à revenir régulièrement pour voir l'évolution 😉</p>
         </div>
 
-    </div>
+    </div> -->
+
+    <!-- TOP BUTTON -->
+    
+    <button class="button-to-top hidden fixed z-40 bottom-56 right-5 h-14 w-14 bg-zinc-50/75 rounded-full shadow-md">
+        <i class="fa-solid fa-arrow-up text-4xl text-pink"></i>
+    </button>
 
     <!-- HEADER -->
-    <header class="relative pb-8 pt-20 md:pb-16 md:pt-16">
+    <header id="header" class="relative pb-8 pt-20 md:pb-16 md:pt-16">
 
         <!-- Background -->
         <div class="-skew-y-[4deg] -translate-y-20 absolute bg-gradient-to-bl from-pink left-0 to-orange top-0 w-[100%] h-[120%] -z-2 transform"></div>
@@ -59,10 +65,10 @@
             <!-- Menu -->
             <ul class="toggle-menu hidden px-2 pt-4 flex flex-col md:pt-0 md:bg-transparent md:flex md:flex-row md:gap-12 md:justify-end">
                 <li class="py-4 text-center border-t border-yankeesblue md:border-none">
-                    <a href="#about" class="smooth-scrool-link">A propos</a>
+                    <a href="#about" class="link-menu">A propos</a>
                 </li>
                 <li class="py-4 text-center border-t border-b border-yankeesblue md:border-none">
-                    <a href="#work" class="smooth-scrool-link">Mon travail</a>
+                    <a href="#work" class="link-menu">Mon travail</a>
                 </li>
                 <li class="py-2 px-3 w-fit mx-auto my-4 bg-gradient-to-l from-pink to-orange rounded-md shadow-md text-center text-yankeesblue hover:scale-95 md:mx-0 md:my-auto md:bg-none md:text-slate-50 md:bg-yankeesblue">
                     <a href="mailto:elise.prts@gmail.com">Contact</a>
@@ -151,9 +157,9 @@
     <!-- WORK -->
     <section id="work" class="relative pb-24 pt-20">
 
-        <div class="-skew-y-[4deg] -translate-y-20 absolute bg-gunmetal w-[100%] h-[100%] -z-2 transform"></div>
+        <div class="-skew-y-[4deg] -translate-y-20 absolute bg-gunmetal w-[100%] h-[100%] -z-10 transform"></div>
 
-        <div class="relative z-index-20 px-10 md:pt-10">
+        <div class="relative z-10 px-10 md:pt-10">
             <h3 class="mb-14 text-zinc-50 font-oswald uppercase text-3xl font-bold text-center md:text-left xl:text-4xl">Mes projets</h3>
 
             <!-- Grid -->
@@ -273,7 +279,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="flex justify-between items-start px-10 pt-20 pb-10 bg-yankeesblue">
+    <footer class="flex justify-between items-start px-10 pt-20 pb-10">
 
         <div class="text-zinc-50">
             <p class="font-oswald uppercase font-bold text-xl mb-2 xl:text-2xl">Elise Pourtois</p>

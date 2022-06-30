@@ -26,7 +26,7 @@ Creating my own portfolio
 **To do list**
 - [x] Inclination of the sections
 - [x] Animated hamburger menu
-- [ ] Smooth scroll
+- [x] Smooth scroll
 - [ ] Add blobs in background of sections
 - [ ] Add arrow to go back to the top of the page
 - [x] Add modal "Work in progress"

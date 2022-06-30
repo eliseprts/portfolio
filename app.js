@@ -1,4 +1,5 @@
 // MODAL
+
 const modalContainer = document.querySelector(".modal-container")
 const modalTriggers = document.querySelectorAll(".modal-trigger")
 
@@ -13,7 +14,8 @@ function hiddenModal() {
     modalContainer.classList.add("hidden")
 }
 
-// BURGER MENU
+// HAMBURGER MENU
+
 const menuElementsToToggle = document.querySelectorAll('.toggle-menu')
 const iconToggle = document.querySelector('.icon-toggle')
 const iconMenu = document.querySelector(".icon-menu")
@@ -33,28 +35,62 @@ function toggleMenu() {
     }
 }
 
-// SMOOTH SCROLL
-const menuLinks = [...document.querySelectorAll('.smooth-scrool-link')]
-console.log(menuLinks)
-const sections = [...document.querySelectorAll('section')]
+// BUTTON TO TOP
+
+const btnToTop = document.querySelector(".button-to-top")
+const aboutSection = document.querySelector("#about")
+
+// Calculate of the position top of about section
+let sectionPosition
+function calculatePosition(section) {
+    sectionPosition = section.offsetTop
+}
+calculatePosition(aboutSection)
+// console.log(sectionPosition)
+
+// Display button from end of about section
+window.onscroll = function () { displayBtn() }
+function displayBtn() {
+    if (document.body.scrollTop > sectionPosition || document.documentElement.scrollTop > sectionPosition) {
+        btnToTop.classList.remove("hidden")
+    } else {
+        btnToTop.classList.add("hidden")
+    }
+}
+
+btnToTop.addEventListener("click", scrollToTop)
+function scrollToTop() {
+    document.body.scrollTop = 0 // Safari
+    document.documentElement.scrollTop = 0 // Chrome, Firefix, Opera
+}
+
+
+// SMOOTH SCROLL : add scroll-smooth in <html> instead
+
+// const menuLinks = [...document.querySelectorAll(".link-menu")]
+// console.log(menuLinks)
+// const sections = [...document.querySelectorAll("section")]
+// console.log(sections)
 
 // Calculation of the position top of each section
-let sectionsPosition
-function positionCalculation() {
-    sectionsPosition = sections.map(section => section.offsetTop)
-}
-positionCalculation()
-console.log(sectionsPosition)
+// let sectionsPosition
+// function positionCalculation() {
+//     sectionsPosition = sections.map(section => section.offsetTop)
+// }
+// positionCalculation()
+// console.log(sectionsPosition)
 
 // Scroll
-menuLinks.forEach(link => link.addEventListener('click', addScrollSmooth))
-function addScrollSmooth(e) {
-    const linkIndex = menuLinks.indexOf(e.target)
-    window.scrollTo({
-        top: sectionsPosition[linkIndex],
-        behavior: 'smooth'
-    })
-}
+// menuLinks.forEach(link => link.addEventListener("click", addScrollSmooth))
+// function addScrollSmooth(e) {
+//     const linkIndex = menuLinks.indexOf(e.target)
+//     console.log(linkIndex)
+//     console.log(sectionsPosition[linkIndex])
+//     window.scrollTo({
+//         top: sectionsPosition[linkIndex],
+//         behavior: "smooth"
+//     });
+// }
 
 // If window is resizing, recall the function positionCalculation
-window.addEventListener('resize', positionCalculation)
+// window.addEventListener("resize", positionCalculation)
