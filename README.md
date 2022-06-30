@@ -16,6 +16,10 @@ Creating my own portfolio
 
 ## Result
 
+### Style guide
+
+<img src="./assets/style_guide.png" style="width:100px">
+
 ### Prototype
 
 [Prototype created with Figma](https://www.figma.com/file/C2Xr0J2ekygGK9yaLaLiL7/Portfolio?node-id=38%3A2)
