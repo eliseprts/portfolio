@@ -14,6 +14,23 @@ _Work in progres... But you can already have a look [here](https://eliseprts.git
 
 Creating my own portfolio
 
+**Workflow**
+- [x] Style Guide
+- [x] Prototype
+- [ ] Development [in progress]
+- [x] Deployment [already deployed to share my work in progress] > [here](https://eliseprts.github.io/portfolio/)
+- [ ] Share
+
+**To do list**
+- [x] Inclination of the sections
+- [x] Animated hamburger menu
+- [ ] Smooth scroll
+- [ ] Add blobs in background of sections
+- [ ] Add arrow to go back to the top of the page
+- [x] Add modal "Work in progress"
+- [ ] Replace the Lorem Ipsum with real text
+- [ ] Add real projects in Work section
+
 ## Result
 
 ### Style guide
