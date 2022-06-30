@@ -18,7 +18,9 @@ Creating my own portfolio
 
 ### Style guide
 
-<img src="./assets/style_guide.png" style="width:500px">
+<div style="display:flex;justify-content:center;align-items:center">
+  <img src="./assets/style_guide.png" style="width:700px">
+ </div>
 
 ### Prototype
 
