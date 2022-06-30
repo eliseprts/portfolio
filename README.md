@@ -43,7 +43,7 @@ Creating my own portfolio
 
 ### Prototype
 
-[Prototype created with Figma](https://www.figma.com/file/C2Xr0J2ekygGK9yaLaLiL7/Portfolio?node-id=38%3A2)
+[Prototype created with Figma](https://www.figma.com/file/C2Xr0J2ekygGK9yaLaLiL7/Portfolio?node-id=0%3A1)
 
 <p align="center" style="font-weight:bold">
   <img src="./assets/mockup.png" style="width:350px">
