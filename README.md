@@ -28,7 +28,7 @@ Creating my own portfolio
 - [x] Animated hamburger menu
 - [x] Smooth scroll
 - [ ] Add blobs in background of sections
-- [ ] Add arrow to go back to the top of the page
+- [x] Add arrow to go back to the top of the page
 - [x] Add modal "Work in progress"
 - [ ] Replace the Lorem Ipsum with real text
 - [ ] Add real projects in Work section
