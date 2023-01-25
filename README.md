@@ -1,6 +1,6 @@
 # Portfolio
 
-_Work in progres... But you can already have a look [here](https://eliseprts.github.io/portfolio/)_
+_Work in progress... But you can already have a look [here](https://eliseprts.github.io/portfolio/)_
 
 ## Technologies used
 
